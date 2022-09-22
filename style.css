@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+}
+
+
+body{
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;   
+    background:  url(sol.png) no-repeat,radial-gradient(circle at 50% 45%,rgb(255, 214, 67) 1%,   rgb(255, 248, 188) 30%,rgb(148, 228, 255) 70%);
+    background-position: center;
+    background-attachment:fixed;
+    overflow-x: hidden;
+}
+
+header,#Skill div{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3%;
+    min-height: 60px;
+    align-items: center;
+}
+
+li{
+    display: inline;
+    padding-inline: 10px;
+}
+li{
+    color: rgb(58, 58, 58);
+}
+
+#Home{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}#Home{
+    background: url(montañas.png) no-repeat;
+    background-position: center;
+    background-size: 101% 90vh;
+}#Home img{
+    position: absolute;
+}
+#Home h1{
+    text-align: center;
+    position: relative;
+}
+#Home h1{
+    font-size: 70px;
+}
+
+
+#Imagen-1{
+    left: 60%;
+    top: 0%;
+}
+#Imagen-2{
+    left: 20%;
+    top: 15%;
+}
+#Imagen-3{
+    top: 0%;
+    left: 75%;
+}
+
+#Skill{
+    text-align: center;
+    min-height: 60vh;
+    padding-block: 8rem;
+}
+#Skill{
+    background: #fff;
+}
+
+#Skill .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Skill h1,#Sobre-mi h1{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#Skill h1,#Sobre-mi h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#Skill .Column{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+}
