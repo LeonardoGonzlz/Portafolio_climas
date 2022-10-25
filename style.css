@@ -16,8 +16,11 @@ header,#Skill div{
     display: flex;
     justify-content: space-between;
     padding-inline: 3%;
-    min-height: 60px;
     align-items: center;
+}
+
+header{
+    height: 60px;
 }
 
 li{
@@ -25,68 +28,93 @@ li{
     padding-inline: 10px;
 }
 li{
-    color: rgb(58, 58, 58);
+    color: rgb(106, 106, 106);
+}
+
+section{
+    height: 110vh;
 }
 
 #Home{
     position: relative;
-    height: 90vh;
+    height: 110vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
 }#Home{
-    background: url(montañas.png) no-repeat;
+    background:  linear-gradient(rgba(255, 255, 255, 0)96%,rgb(148, 228, 255)), url(montañas.png) no-repeat;
     background-position: center;
-    background-size: 101% 90vh;
+    background-size: 101% 112vh;
 }#Home img{
     position: absolute;
 }
 #Home h1{
     text-align: center;
-    position: relative;
+    position: absolute;
+    z-index: 5;
 }
 #Home h1{
-    font-size: 70px;
+    font-size: 10vh;
 }
 
 
-#Imagen-1{
-    left: 60%;
-    top: 0%;
+#Pajaros-1{
+    left: 40%;
+    top: -50%;
 }
-#Imagen-2{
-    left: 20%;
+#Pajaros-2{
+    left: 10%;
     top: 15%;
 }
-#Imagen-3{
+#Pajaros-3{
     top: 0%;
     left: 75%;
 }
 
-#Skill{
+#Skill,#Sobre-mi{
     text-align: center;
-    min-height: 60vh;
-    padding-block: 8rem;
-}
-#Skill{
-    background: #fff;
+    min-height: 110vh;
 }
 
-#Skill .wrap{
+#Skill .wrap,#Sobre-mi{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 90%;
 }
+
+#Skill{
+    background: linear-gradient(rgb(148, 228, 255),rgba(255, 255, 255, 0)10%,rgba(255, 255, 255, 0)97%,rgb(148, 228, 255)),url(desierto_8.png) no-repeat;
+    background-position:center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+
+#Avion{
+    position: absolute;
+    transition: all 25s;
+    z-index: 2;
+    left: 50%;
+    transition: all 10s linear;
+}
+
+#Skill div{
+    padding-inline: 10%;
+}
+
 
 #Skill h1,#Sobre-mi h1{
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
 
-#Skill h1,#Sobre-mi h1{
-    font-size: 50px;
+#Skill h1{
+    font-size: 60px;
     font-weight: 900;
 }
 
@@ -94,4 +122,120 @@ li{
     display: flex;
     flex-direction: column;
     padding: 3rem 2rem;
+}
+
+#Sobre-mi{
+    width: 100%;
+    height: 130vh;
+    overflow: hidden;
+    background: linear-gradient(rgb(148, 228, 255),transparent 20%);
+}
+
+#Sobre-mi div{
+    max-width: 400px;
+}
+
+
+/*----- Animacion observe ------*/
+
+.Observer{
+    opacity:0;
+    transform: translateY(150px) scale(0.5);
+    transition: all 2s;
+  
+}
+
+.Observer-animacion{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+}
+
+
+/* ------- Paralax Sobre mi --------*/
+#Sobre-mi img{
+    position: absolute;
+}
+
+
+#Lago{
+    width: 102%;
+    height: 100%;
+    object-fit: cover;
+    top: 279%;
+}
+
+#Isla{
+    top: 198%;
+    left: -10%;
+    z-index: -1;
+}
+
+#Barco-pirata{
+    top:280%;
+    z-index: 1;
+}
+#Tiburon{
+    width: 450px;
+    top: 300%;
+    z-index: 9;
+    white-space: nowrap;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: 300px;
+    padding: 5%;
+    border: solid rgb(192, 255, 141);
+}
+
+#Contacto{
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#Contacto img{
+    position: absolute;
+}
+
+input, textarea{
+    background: rgba(255, 255, 255, 0.71);
+    border: solid 2px #fff;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-bottom: 1rem;
+}
+
+/* ----- paralax contacto -------*/
+
+#Ciudad{
+    width: 448px;
+    height: 450px;
+    left: 9px;
+    top: 500%;
+    z-index: 5;
+    animation: mover 8s linear 4s   infinite;
+}
+
+#Ciudad-2{
+    width: 448px;
+    height: 450px;
+    left: 9px;
+    top: 500%;
+    animation: mover 8s linear  infinite;
+}
+
+@keyframes mover {
+    0%{
+        left: 9px;
+    }
+    100%{
+        left: 850px;
+    }
 }
